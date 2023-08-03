@@ -48,7 +48,7 @@ Use the following example of a responsive table component to show multiple rows 
     <TableHeadCell>Category</TableHeadCell>
     <TableHeadCell>Price</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -90,7 +90,7 @@ Set the `striped` prop to `true` to alternate background colors of every second 
       <span class="sr-only"> Edit </span>
     </TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -169,7 +169,7 @@ Set `hoverable` to `true` to change the background color of a data row when hove
       <span class="sr-only"> Edit </span>
     </TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -229,7 +229,7 @@ Checkboxes can be used inside table data rows to select multiple data sets and a
       <span class="sr-only"> Edit </span>
     </TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell class="!p-4">
         <Checkbox />
@@ -300,7 +300,7 @@ Checkboxes can be used inside table data rows to select multiple data sets and a
     <TableHeadCell>Type</TableHeadCell>
     <TableHeadCell>Make</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     {#each filteredItems as item}
       <TableBodyRow>
         <TableBodyCell>{item.id}</TableBodyCell>
@@ -374,7 +374,7 @@ Use the on:click event on the column headers to call the sortTable function with
     <TableHeadCell on:click={() => sortTable('type')}>Type</TableHeadCell>
     <TableHeadCell on:click={() => sortTable('make')}>Make</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     {#each $sortItems as item}
       <TableBodyRow>
         <TableBodyCell>{item.id}</TableBodyCell>
@@ -410,7 +410,7 @@ By default, the `<TableHead>` component will create a single `<tr>` element with
       <TableHeadCell>Price</TableHeadCell>
     </tr>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple</TableBodyCell>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
@@ -508,7 +508,7 @@ Improve accessibility by using a caption inside the table as a heading to better
       <span class="sr-only"> Edit </span>
     </TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -601,7 +601,7 @@ Use this example to apply a shadow border to the table component.
     <TableHeadCell>Category</TableHeadCell>
     <TableHeadCell>Price</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -647,7 +647,7 @@ Use this example to enable horizontal scrolling if the content inside the table 
     <TableHeadCell>WEIGHT</TableHeadCell>
     <TableHeadCell>ACTION</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell class="!p-4">
         <Checkbox />
@@ -728,7 +728,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
     <TableHeadCell>Category</TableHeadCell>
     <TableHeadCell>Price</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -778,7 +778,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
     <TableHeadCell>Type</TableHeadCell>
     <TableHeadCell>Make</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     {#each filteredItems as item}
       <TableBodyRow>
         <TableBodyCell>{item.id}</TableBodyCell>
@@ -803,7 +803,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
     <TableHeadCell>Category</TableHeadCell>
     <TableHeadCell>Price</TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
@@ -845,7 +845,7 @@ Use this example to apply a different color to every second row inside the table
       <span class="sr-only"> Edit </span>
     </TableHeadCell>
   </TableHead>
-  <TableBody class="divide-y">
+  <TableBody tableBodyClass="divide-y">
     <TableBodyRow>
       <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
       <TableBodyCell>Sliver</TableBodyCell>
